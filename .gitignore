@@ -1,26 +1,48 @@
-# Angular specific
-/dist/
-/out-tsc/
-/tmp/
-/coverage/
-/e2e/test-output/
-/.angular/
-.angular/
+# Dependencies
+node_modules/
 
-# Node modules and dependency files
-/node_modules/
+# Angular
+.angular/
+dist/
+out-tsc/
+
+# Build & Coverage
+coverage/
+tmp/
 
 # Environment files
-/.env
-
-# Angular CLI and build artefacts
-/.angular-cli.json
-/.ng/
-
-# TypeScript cache
-*.tsbuildinfo
+.env
+.env.*
 
 # Logs
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Firebase
+.firebase/
+
+# Testing
+e2e/test-output/
+
+# Local Angular environments (si existen)
+src/environments/environment.local.ts
+src/environments/environment.prod.local.ts
